@@ -1,0 +1,65 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2026-03-04 16:57 GMT
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:57
+Completed NSE at 16:57, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 16:57
+Completed Parallel DNS resolution of 1 host. at 16:57, 0.00s elapsed
+Initiating Connect Scan at 16:57
+Scanning fms-lh-sftp1.dcc.fexco.ie (172.120.3.38) [1 port]
+Discovered open port 22/tcp on 172.120.3.38
+Completed Connect Scan at 16:57, 0.00s elapsed (1 total ports)
+NSE: Script scanning 172.120.3.38.
+Initiating NSE at 16:57
+Completed NSE at 16:57, 0.02s elapsed
+Nmap scan report for fms-lh-sftp1.dcc.fexco.ie (172.120.3.38)
+Host is up (0.00085s latency).
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh2-enum-algos: 
+|   kex_algorithms: (12)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       kex-strict-s-v00@openssh.com
+|   server_host_key_algorithms: (5)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ssh-rsa
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (7)
+|       aes256-gcm@openssh.com
+|       chacha20-poly1305@openssh.com
+|       aes256-ctr
+|       aes256-cbc
+|       aes128-gcm@openssh.com
+|       aes128-ctr
+|       aes128-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha2-256
+|       hmac-sha1
+|       umac-128@openssh.com
+|       hmac-sha2-512
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:57
+Completed NSE at 16:57, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.18 seconds
